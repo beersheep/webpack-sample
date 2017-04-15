@@ -6,5 +6,14 @@ module.exports = {
   output: {
     filename: 'bundle.js', 
     path: Path.resolve(__dirname, 'build')
+  }, 
+  
+  module:  {
+    rules: [
+      {
+        use: "babel-loader", 
+        test: /\.js$/
+      }
+    ]
   }
 }

@@ -1,4 +1,5 @@
-const sum = require('./sum');
+import imageViewer from './image_viewer';
+import './style.css';
 
-const total = sum(2, 3);
-console.log(total);
+imageViewer();
+

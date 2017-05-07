@@ -1,7 +1,14 @@
+import small from '../assets/small.jpg';
+import large from '../assets/large.jpg';
+
 const imageViewer = () => {
-  let img = document.createElement('img');
-  img.src = 'http://lorempixel.com/400/400';
-  document.body.appendChild(img);
+  let smallImage = document.createElement('img');
+  smallImage.src = small;
+  document.body.appendChild(smallImage);
+
+  let largeImage = document.createElement('img');
+  largeImage.src = large;
+  document.body.appendChild(largeImage);
 }
 
 export default imageViewer;
